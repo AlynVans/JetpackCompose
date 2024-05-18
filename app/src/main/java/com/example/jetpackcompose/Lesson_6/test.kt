@@ -8,6 +8,7 @@ import com.example.jetpackcompose.R
 
 @Composable
 @Preview
+
 fun imagine(){
     Image(
         bitmap = ImageBitmap.imageResource(R.drawable.prog_cat),
