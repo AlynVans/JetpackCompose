@@ -1,4 +1,4 @@
-package com.example.jetpackcompose.Lessons_1_1_10
+package com.example.jetpackcompose.Lessons_1
 
 import androidx.compose.foundation.clickable
 import androidx.compose.material3.Text

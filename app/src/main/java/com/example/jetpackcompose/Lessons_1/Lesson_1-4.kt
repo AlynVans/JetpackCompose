@@ -1,4 +1,4 @@
-package com.example.jetpackcompose.Lessons_1_1_10
+package com.example.jetpackcompose.Lessons_1
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.PaddingValues
@@ -15,21 +15,19 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-
 import androidx.compose.ui.unit.sp
 
 @Composable
 @Preview
-fun TextTest() {
+fun ScreenElementExperiment() {
     val myColor: Color = Color(0xFFFFC107)
     Text(
         "back",
-        fontSize = 69.sp,
-        modifier = Modifier
+        fontSize = 69.sp, // Font Size
+        modifier = Modifier // Modifier
             .padding(start = 20.dp, top=40.dp, bottom = 30.dp, end = 5.dp)
             .background(Color.Red)
-            .fillMaxSize()
-
+            .fillMaxSize() //Elem Size
     )
     Text(
         "Bruh1",
@@ -37,8 +35,8 @@ fun TextTest() {
         modifier = Modifier
             .background(Color.Blue)
             .padding()
-            .width(300.dp)
-            .fillMaxHeight(0.6f)
+            .width(300.dp) //Elem Size
+            .fillMaxHeight(0.6f) //Elem Size
     )
     val innerPadding = PaddingValues(top = 30.dp, start = 115.dp) //Шаблон
     Text(

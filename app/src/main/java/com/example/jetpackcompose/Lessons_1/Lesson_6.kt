@@ -1,4 +1,4 @@
-package com.example.jetpackcompose.Lessons_1_1_10
+package com.example.jetpackcompose.Lessons_1
 
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.padding
