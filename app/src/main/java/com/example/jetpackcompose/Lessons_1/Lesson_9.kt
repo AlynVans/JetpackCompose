@@ -11,11 +11,13 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 @Preview
-fun TextTest9() {
-    val count = remember{mutableStateOf(0)}
+fun ClickTest() {
+    val count = remember { mutableStateOf(0) }
 
-    Text("Clicks: ${count.value}",
+    Text(
+        "Clicks: ${count.value}",
         fontSize = 28.sp,
-        modifier = Modifier.clickable( onClick = { count.value += 1 })
+        modifier = Modifier
+            .clickable(onClick = { count.value += 1 })
     )
 }

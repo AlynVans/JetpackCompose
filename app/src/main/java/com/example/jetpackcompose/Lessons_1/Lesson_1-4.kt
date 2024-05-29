@@ -18,44 +18,47 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-@Preview
-fun ScreenElementExperiment() {
-    val myColor: Color = Color(0xFFFFC107)
+@Preview(showBackground = true)
+fun ScreenElementTest() {
+    val myColor = Color(0xFFFFC107) // Задаем цвет
+
     Text(
         "back",
-        fontSize = 69.sp, // Font Size
-        modifier = Modifier // Modifier
-            .padding(start = 20.dp, top=40.dp, bottom = 30.dp, end = 5.dp)
-            .background(Color.Red)
-            .fillMaxSize() //Elem Size
+        fontSize = 69.sp, // Размер шрифта
+        modifier = Modifier // Модификатор
+            .padding(start = 20.dp, top = 40.dp, bottom = 30.dp, end = 5.dp) // Отступы
+            .background(Color.Red) // Цвет фона
+            .fillMaxSize() // Размер элемента
     )
+
     Text(
         "Bruh1",
-        fontSize = 40.sp,
+        fontSize = 40.sp, // Размер шрифта
         modifier = Modifier
-            .background(Color.Blue)
-            .padding()
-            .width(300.dp) //Elem Size
-            .fillMaxHeight(0.6f) //Elem Size
+            .background(Color.Blue) // Цвет фона
+            .padding() // Отступы (по умолчанию)
+            .width(300.dp) // Ширина элемента
+            .fillMaxHeight(0.6f) // Высота элемента (относительная)
     )
-    val innerPadding = PaddingValues(top = 30.dp, start = 115.dp) //Шаблон
+
+    val innerPadding = PaddingValues(top = 30.dp, start = 115.dp) // Шаблон отступов
+
     Text(
         "Bruh2",
-        fontSize = 40.sp,
+        fontSize = 40.sp, // Размер шрифта
         modifier = Modifier
-            .padding(innerPadding) //шаблон
-            .background(myColor)
-            .height(300.dp)
-            .fillMaxWidth(0.5f)
-
+            .padding(innerPadding) // Применение шаблона отступов
+            .background(myColor) // Цвет фона
+            .height(300.dp) // Высота элемента
+            .fillMaxWidth(0.5f) // Ширина элемента (относительная)
     )
+
     Text(
         "Bruh3",
-        fontSize = 40.sp,
+        fontSize = 40.sp, // Размер шрифта
         modifier = Modifier
-            .padding(vertical = 90.dp)
-            .background(Color.Cyan)
-            .size(300.dp)
-
+            .padding(vertical = 90.dp) // Вертикальные отступы
+            .background(Color.Cyan) // Цвет фона
+            .size(300.dp) // Размер элемента (ширина и высота)
     )
 }

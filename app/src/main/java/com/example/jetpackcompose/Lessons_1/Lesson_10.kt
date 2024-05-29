@@ -17,57 +17,60 @@ import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
 @Preview
-
-
 fun CustomModifiers() {
     UnificationModifier()
 }
 
 @Composable
-fun DefaultModifier(){
-    Message1("Hello METANIT.COM")
+fun DefaultModifier() {
+    Message1("TEXT1")
 }
 
 @Composable
-fun Message1(text:String, textModifier:Modifier= Modifier
-    .fillMaxWidth()
-    .padding(10.dp)){
+fun Message1(
+    text: String, textModifier: Modifier = Modifier
+        .fillMaxWidth()
+        .padding(10.dp)
+) {
     Text(text, textModifier, fontSize = 28.sp, textAlign = TextAlign.Center)
 }
 
- // ----------------------------------------------------- //
+// ----------------------------------------------------- //
 
 @Composable
-fun VariableModifier(){
+fun VariableModifier() {
     val myModifier = Modifier
         .fillMaxWidth()
         .padding(10.dp)
         .border(width = 2.dp, color = Color.DarkGray)
         .background(Color.LightGray)
         .padding(20.dp)
-    Message2("Hello METANIT.COM", myModifier)
+    Message2("TEXT2", myModifier)
 }
+
 @Composable
-fun Message2(text:String, textModifier:Modifier = Modifier
-    .fillMaxWidth()
-    .padding(10.dp)){
+fun Message2(
+    text: String, textModifier: Modifier = Modifier
+        .fillMaxWidth()
+        .padding(10.dp)
+) {
     Text(text, textModifier, fontSize = 28.sp, textAlign = TextAlign.Center)
 }
 
- // ----------------------------------------------------- //
+// ----------------------------------------------------- //
 
 @Composable
-fun UnificationModifier(){
+fun UnificationModifier() {
     val customModifier = Modifier
         .border(width = 2.dp, color = Color.DarkGray, shape = CircleShape)
         .clip(shape = CircleShape)
         .background(Color.LightGray)
         .padding(20.dp)
-    Message3("Hello METANIT.COM", customModifier)
+    Message3("TEXT3", customModifier)
 }
 
 @Composable
-fun Message3(text:String, textModifier: Modifier=Modifier){
+fun Message3(text: String, textModifier: Modifier = Modifier) {
     val defaultModifier = Modifier
         .fillMaxWidth()
         .padding(10.dp)
