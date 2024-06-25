@@ -21,7 +21,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 @Preview(showBackground = true)
-fun Less_7_3_LazyVertGrid() {
+fun LazyVertGridTest() {
     val langs = listOf(
         ProgrammingLanguage("Kotlin", 0xff16a085),
         ProgrammingLanguage("C++", 0xfff39c12),

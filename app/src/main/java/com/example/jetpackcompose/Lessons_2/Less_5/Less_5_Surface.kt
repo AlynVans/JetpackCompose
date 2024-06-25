@@ -12,7 +12,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 @Preview(showBackground = true)
-fun SurfaceTest() {
+fun SurfaceTest() { // Surface это контейнер для содержимого, типа экран где всё рисуется
     val langs = listOf("Kotlin", "Java", "JavaScript", "Python")
     Surface(
         Modifier.fillMaxSize(),

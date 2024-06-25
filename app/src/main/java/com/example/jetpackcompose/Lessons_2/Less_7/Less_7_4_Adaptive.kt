@@ -21,7 +21,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 @Preview(showBackground = true)
-fun Less_7_4_Adaptive() {
+fun AdaptiveTest() {
     val langs = listOf(
         ProgrammingLanguage4("Kotlin", 0xff16a085),
         ProgrammingLanguage4("C++", 0xfff39c12),
@@ -46,7 +46,7 @@ fun Less_7_4_Adaptive() {
         ProgrammingLanguage4("F#", 0xff800000)
     )
     LazyVerticalGrid(
-        columns = GridCells.Adaptive(minSize=120.dp),
+        columns = GridCells.Adaptive(minSize=120.dp), //Адаптипный размер сетки
         modifier = Modifier.fillMaxSize(),
         horizontalArrangement = Arrangement.Center
     ){

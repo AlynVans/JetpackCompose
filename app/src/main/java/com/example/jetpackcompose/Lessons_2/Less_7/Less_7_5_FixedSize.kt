@@ -21,7 +21,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 @Preview(showBackground = true)
-fun Less_7_5_FixSize() {
+fun FixedSizeTest() {
     val langs = listOf(
         ProgrammingLanguage5("Kotlin", 0xff16a085),
         ProgrammingLanguage5("C++", 0xfff39c12),

@@ -21,7 +21,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 @Preview(showBackground = true)
-fun Less_7_2_Grid() {
+fun LazyHorizGridTest_2() {
     val langs = listOf(
         Language("Kotlin", 0xff16a085),
         Language("Java", 0xff2980b9),

@@ -1,13 +1,13 @@
-package lesstest
+package com.example.jetpackcompose.Lessons_2.Less_8
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.lazy.staggeredgrid.LazyVerticalStaggeredGrid
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.staggeredgrid.LazyHorizontalStaggeredGrid
 import androidx.compose.foundation.lazy.staggeredgrid.StaggeredGridCells
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
@@ -19,7 +19,7 @@ import kotlin.random.Random
 
 @Composable
 @Preview(showBackground = true)
-fun LazyVerticalStaggeredGridTest_1() {
+fun LazyHorizontalStaggeredGridTest_1() {
 
     // Генерация списка цветов при первом запуске
     val colors = remember {
@@ -40,19 +40,18 @@ fun LazyVerticalStaggeredGridTest_1() {
         }
     }
 
-    LazyVerticalStaggeredGrid(
-        columns = StaggeredGridCells.Fixed(3),  // 3 столбца
+    LazyHorizontalStaggeredGrid(
+        rows = StaggeredGridCells.Fixed(3),
         modifier = Modifier.fillMaxSize(),
         contentPadding = PaddingValues(8.dp),
-        horizontalArrangement = Arrangement.spacedBy(8.dp),
-        verticalItemSpacing = 8.dp
-    ) {
+        horizontalItemSpacing = 8.dp,
+        verticalArrangement = Arrangement.spacedBy(8.dp)
+    ){
         items(50) { index ->
-            Box(
-                Modifier
-                    .fillMaxWidth()
-                    .height(sizes[index])
-                    .background(colors[index])
+            Box(Modifier
+                .fillMaxHeight()
+                .width(sizes[index])
+                .background(colors[index])
             )
         }
     }

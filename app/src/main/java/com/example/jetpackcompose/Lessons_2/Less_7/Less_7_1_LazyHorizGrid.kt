@@ -15,7 +15,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 @Preview(showBackground = true)
-fun Less_7_1_Grid() {
+fun LazyHorizGridTest_1() {
     val itemsList = (0..12).toList()  // Создаем список чисел от 0 до 12.
 
     LazyHorizontalGrid(
