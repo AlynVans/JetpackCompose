@@ -13,12 +13,11 @@ import androidx.compose.runtime.setValue
 
 @Composable
 @Preview
-fun ByRememberState(){
-    var value by remember{mutableStateOf("Hello METANIT.COM")}
-
+fun ByRememberStateTest() {
+    var message by remember { mutableStateOf("Hello METANIT.COM") } //Но если поставить by то можно будет сразу обращаться к перемменным
     Text(
-        text = value,
+        text = message,
         fontSize = 28.sp,
-        modifier = Modifier.clickable( onClick = { value = "Hello Word"})
+        modifier = Modifier.clickable(onClick = { message = "Hello Word" })
     )
 }

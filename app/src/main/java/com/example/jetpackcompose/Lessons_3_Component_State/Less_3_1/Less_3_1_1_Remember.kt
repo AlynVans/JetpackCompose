@@ -11,11 +11,11 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 @Preview
-fun RememberState(){
-    val message = remember{mutableStateOf("Hello METANIT.COM")}
+fun RememberStateTest() {
+    val message = remember { mutableStateOf("Hello METANIT.COM") } // если не используется by, то всегда надо уточнять .value
     Text(
         text = message.value,
         fontSize = 25.sp,
-        modifier = Modifier.clickable( onClick = { message.value = "Hello Work!" })
+        modifier = Modifier.clickable(onClick = { message.value = "Hello Work!" })
     )
 }

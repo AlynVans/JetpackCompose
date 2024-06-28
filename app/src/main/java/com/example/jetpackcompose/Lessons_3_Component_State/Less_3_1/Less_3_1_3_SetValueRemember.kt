@@ -11,12 +11,12 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 @Preview
-fun SetValueRememberState(){
-    val (value, setValue) = remember{mutableStateOf("Hello METANIT.COM")}
+fun SetValueRememberStateTest(){
+    val (message, setMessage) = remember{mutableStateOf("Hello METANIT.COM")}
 
     Text(
-        text = value,
+        text = message,
         fontSize = 28.sp,
-        modifier = Modifier.clickable( onClick = { setValue("Hello Word")})
+        modifier = Modifier.clickable( onClick = { setMessage("Hello Word")})
     )
 }

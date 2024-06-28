@@ -13,7 +13,7 @@ import androidx.compose.runtime.setValue
 
 @Composable
 @Preview
-fun RememberSaveable(){
+fun RememberSaveableTest(){
     var value by rememberSaveable{mutableStateOf("Hello METANIT.COM")}
 
     Text(

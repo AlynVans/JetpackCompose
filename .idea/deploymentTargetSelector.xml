@@ -5,19 +5,16 @@
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="LazyVerticalStaggeredGridTest">
+      <SelectionState runConfigName="RememberStateTest">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="LazyVerticalStaggeredGrid_2Test">
+      <SelectionState runConfigName="ScreenElementTest">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="LazyHorizontalStaggeredGridTest_2">
+      <SelectionState runConfigName="ByRememberStateTest">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="LazyHorizontalStaggeredGridTest_1">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
-      <SelectionState runConfigName="FlowRowTest">
+      <SelectionState runConfigName="PhonesListTest">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>

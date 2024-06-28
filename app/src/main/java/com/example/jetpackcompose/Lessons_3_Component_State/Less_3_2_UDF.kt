@@ -16,7 +16,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 @Preview
-fun UDF() {
+fun UDFTest() { // Unidirectional Data Flow
     Counter()
 }
 
