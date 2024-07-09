@@ -1,4 +1,4 @@
-package com.example.jetpackcompose.lesson_4.Buttons
+package com.example.jetpackcompose.lesson_4.Other
 
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.interaction.collectIsHoveredAsState
