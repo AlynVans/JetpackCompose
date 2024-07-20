@@ -3,6 +3,7 @@ package com.example.jetpackcompose
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -30,10 +31,13 @@ fun ComposeFeatureApp() {
     var selectedFeatureId by remember { mutableStateOf<Int?>(null) }
     val features = remember {
         listOf(
-            ComposeFeature(1, "Base", "Азы"),
-            ComposeFeature(2, "Bruh", "Примеры кнопок"),
-            ComposeFeature(3, "Lists", "Работа со списками"),
-            ComposeFeature(4,"Bruh","Bruh")
+            ComposeFeature(1, "ScreenElement", "Элементы на экране"),
+            ComposeFeature(2, "ScrollableText", "Склорируемый текст"),
+            ComposeFeature(3, "BorderShape", "Границы текста"),
+            ComposeFeature(4,"Clip","Скругление?"),
+            ComposeFeature(5,"Shadows","Тени"),
+            ComposeFeature(6,"ClickCounter","Подсчёт кликов"),
+            ComposeFeature(7,"MessageModifiers","Да хз"),
         )
     }
 
