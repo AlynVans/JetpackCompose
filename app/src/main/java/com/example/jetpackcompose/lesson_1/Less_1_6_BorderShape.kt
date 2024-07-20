@@ -18,15 +18,15 @@ fun BorderShapeTest() {
 
     Column {
         Text(
-            "TEXT1",
+            text = "TEXT1",
             fontSize = 69.sp,
             modifier = Modifier
-                .padding(10.dp)     // отступы между границей компонента и границами контейнера
+                .padding(10.dp) // Отступы между границей компонента и границами контейнера
                 .border(width = 2.dp, color = Color.Red)
-                .padding(10.dp)     // отступы между границей и содержимым компонента
+                .padding(10.dp) // Отступы между границей и содержимым компонента
         )
         Text(
-            "TEXT2",
+            text = "TEXT2",
             fontSize = 69.sp,
             modifier = Modifier
                 .padding(top = 150.dp)

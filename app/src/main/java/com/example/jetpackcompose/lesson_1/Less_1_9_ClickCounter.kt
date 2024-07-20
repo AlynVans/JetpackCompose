@@ -11,13 +11,15 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 @Preview(showBackground = true)
-fun ClickTest() {
-    val count = remember { mutableStateOf(0) }
+fun ClickCounter() {
+    // Используем remember для сохранения состояния количества кликов
+    val clickCount = remember { mutableStateOf(0) }
 
     Text(
-        "Clicks: ${count.value}",
+        text = "Clicks: ${clickCount.value}",
         fontSize = 28.sp,
-        modifier = Modifier
-            .clickable(onClick = { count.value += 1 })
+        modifier = Modifier.clickable(
+            onClick = { clickCount.value += 1 } // Увеличиваем счетчик при клике
+        )
     )
 }

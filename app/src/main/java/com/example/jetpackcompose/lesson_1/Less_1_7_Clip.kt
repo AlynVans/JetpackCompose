@@ -18,40 +18,41 @@ import androidx.compose.ui.unit.sp
 @Composable
 @Preview(showBackground = true)
 fun ClipTest() {
+    val cornerRadius = 30.dp // Скругление углов
 
     Column {
         Text(
-            "TEXT1",
+            text = "TEXT1",
             fontSize = 28.sp,
             modifier = Modifier
                 .padding(10.dp)
-                .clip(shape = RoundedCornerShape(30.dp))
+                .clip(RoundedCornerShape(cornerRadius))
                 .background(Color.LightGray)
                 .padding(15.dp)
         )
 
         Text(
-            "TEXT2",
+            text = "TEXT2",
             fontSize = 28.sp,
             modifier = Modifier
                 .padding(10.dp)
-                .clip(shape = RoundedCornerShape(30.dp))
-                .border(width = 2.dp, color = Color.DarkGray, shape = RoundedCornerShape(30.dp))
+                .clip(RoundedCornerShape(cornerRadius))
                 .background(Color.LightGray)
+                .border(width = 2.dp, color = Color.DarkGray, shape = RoundedCornerShape(cornerRadius))
                 .padding(15.dp)
         )
 
         Text(
-            "TEXT3",
+            text = "TEXT3",
             fontSize = 28.sp,
             modifier = Modifier
-                .padding(10.dp)     // отступ от границ контейнера
+                .padding(10.dp)     // Отступ от границ контейнера
                 .background(Color.DarkGray)
-                .padding(25.dp)    // отступ от границ фрагмента
-                .clip(shape = RectangleShape)
+                .padding(25.dp)    // Отступ от границ фрагмента
+                .clip(RectangleShape)
                 .border(width = 2.dp, color = Color.White)
                 .background(Color.LightGray)
-                .padding(20.dp)     // отступ между границей во фрагменте и текстом
+                .padding(20.dp)     // Отступ между границей во фрагменте и текстом
         )
     }
 }

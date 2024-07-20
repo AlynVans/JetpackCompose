@@ -14,20 +14,17 @@ import androidx.compose.ui.unit.sp
 @Composable
 @Preview(showBackground = true)
 fun ShadowTest() {
-
     Column {
-
         Text(
-            "TEXT1",
+            text = "Sample Text 1",
             fontSize = 28.sp,
             modifier = Modifier
                 .padding(20.dp)
                 .shadow(3.dp)
                 .padding(15.dp)
         )
-
         Text(
-            "TEXT2",
+            text = "Sample Text 2",
             fontSize = 28.sp,
             modifier = Modifier
                 .padding(20.dp)

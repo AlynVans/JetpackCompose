@@ -1,4 +1,4 @@
-package com.example.jetpackcompose.lesson_4.Other
+package com.example.jetpackcompose.lesson_4.other
 
 import android.annotation.SuppressLint
 import androidx.compose.animation.core.*
