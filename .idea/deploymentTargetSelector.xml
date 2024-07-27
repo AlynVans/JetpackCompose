@@ -5,7 +5,10 @@
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="TopAppBarTest">
+      <SelectionState runConfigName="SnackbarTest">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="ButtonWithSnackbar">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
