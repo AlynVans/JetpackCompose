@@ -1,4 +1,4 @@
-package com.example.jetpackcompose.lesson_4
+package com.example.jetpackcompose.lesson_4_VisualComponents
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.padding
@@ -32,7 +32,7 @@ import androidx.compose.ui.unit.sp
 @Composable
 @Preview
 fun ScaffoldTest() {
-//    ScaffoldShowCase1()
+    ScaffoldShowCase1()
 //    ScaffoldShowCase2()
 }
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="Bruhs">
+        <item quantity="zero">%d Bruh-0</item>
+        <item quantity="one">%d Bruh-1</item>
+        <item quantity="two">%d Bruh-2</item>
+        <item quantity="few">%d Bruh-9</item>
+        <item quantity="many">%d Bruh-69</item>
+        <item quantity="other">%d Bruh-618</item>
+    </plurals>
+</resources>
