@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Bruh">Bruh Bruh Bruh</string>
+    <string name="user_data">Имя: %1$s. Возраст: %2$d. Компания: %3$s</string>
+</resources>
